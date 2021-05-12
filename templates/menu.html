@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Is your favourite subreddit politically biased?!</title>
+        <script src="//code.jquery.com/jquery-3.1.0.min.js">
+
+        </script>
+    </head>
+    <body>
+        <h1>Is your favourite subreddit politically biased?!</h1>
+        <p>This website calculates how similar a subreddit is to popular political subreddits.</p>
+        <form class="" action="{{url_for('results')}}" method="post">
+            <label for="subreddit">Search subreddit</label><br>
+            <input type="text" name="subreddit" value=""><br>
+            <input type="submit" name="submit" value="Submit">
+        </form>
+
+    </body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Results</title>
+    </head>
+    <body>
+        <h1>Results for r/{{subreddit}}</h1>
+        {% for key, value in similarities.items() %}
+            <p>{{ key }}: {{ value }}</p>
+        {% endfor %}
+
+        <form class="return" action="{{url_for('main_menu')}}" method="post">
+            <input type="submit" name="" value="Search another Subreddit">
+        </form>
+    </body>
+</html>
